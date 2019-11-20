@@ -33,6 +33,7 @@ public class Order {
             for (int i = 0; i < 7; i++) {
                 if (numbs[0] == 1)
                     System.out.println(numbers.one(numbs[0])[i]
+                            + numbers.one(numbs[1])[i]
                             + numbers.two(numbs[1])[i]
                             + numbers.three(numbs[1])[i]
                             + numbers.four(numbs[1])[i]
@@ -45,6 +46,7 @@ public class Order {
                 if (numbs[0] == 2)
                     System.out.println(numbers.two(numbs[0])[i]
                             + numbers.one(numbs[1])[i]
+                            + numbers.two(numbs[1])[i]
                             + numbers.three(numbs[1])[i]
                             + numbers.four(numbs[1])[i]
                             + numbers.five(numbs[1])[i]
@@ -55,8 +57,9 @@ public class Order {
                             + numbers.zero(numbs[1])[i]);
                 if (numbs[0] == 3)
                     System.out.println(numbers.three(numbs[0])[i]
-                            + numbers.two(numbs[1])[i]
                             + numbers.one(numbs[1])[i]
+                            + numbers.two(numbs[1])[i]
+                            + numbers.three(numbs[1])[i]
                             + numbers.four(numbs[1])[i]
                             + numbers.five(numbs[1])[i]
                             + numbers.six(numbs[1])[i]
@@ -66,9 +69,10 @@ public class Order {
                             + numbers.zero(numbs[1])[i]);
                 if (numbs[0] == 4)
                     System.out.println(numbers.four(numbs[0])[i]
+                            + numbers.one(numbs[1])[i]
                             + numbers.two(numbs[1])[i]
                             + numbers.three(numbs[1])[i]
-                            + numbers.one(numbs[1])[i]
+                            + numbers.four(numbs[1])[i]
                             + numbers.five(numbs[1])[i]
                             + numbers.six(numbs[1])[i]
                             + numbers.seven(numbs[1])[i]
@@ -77,10 +81,11 @@ public class Order {
                             + numbers.zero(numbs[1])[i]);
                 if (numbs[0] == 5)
                     System.out.println(numbers.five(numbs[0])[i]
+                            + numbers.one(numbs[1])[i]
                             + numbers.two(numbs[1])[i]
                             + numbers.three(numbs[1])[i]
                             + numbers.four(numbs[1])[i]
-                            + numbers.one(numbs[1])[i]
+                            + numbers.five(numbs[1])[i]
                             + numbers.six(numbs[1])[i]
                             + numbers.seven(numbs[1])[i]
                             + numbers.eight(numbs[1])[i]
@@ -88,39 +93,31 @@ public class Order {
                             + numbers.zero(numbs[1])[i]);
                 if (numbs[0] == 6)
                     System.out.println(numbers.six(numbs[0])[i]
+                            + numbers.one(numbs[1])[i]
                             + numbers.two(numbs[1])[i]
                             + numbers.three(numbs[1])[i]
                             + numbers.four(numbs[1])[i]
                             + numbers.five(numbs[1])[i]
-                            + numbers.one(numbs[1])[i]
+                            + numbers.six(numbs[1])[i]
                             + numbers.seven(numbs[1])[i]
                             + numbers.eight(numbs[1])[i]
                             + numbers.nine(numbs[1])[i]
                             + numbers.zero(numbs[1])[i]);
                 if (numbs[0] == 7)
                     System.out.println(numbers.seven(numbs[0])[i]
+                            + numbers.one(numbs[1])[i]
                             + numbers.two(numbs[1])[i]
                             + numbers.three(numbs[1])[i]
                             + numbers.four(numbs[1])[i]
                             + numbers.five(numbs[1])[i]
                             + numbers.six(numbs[1])[i]
-                            + numbers.one(numbs[1])[i]
+                            + numbers.seven(numbs[1])[i]
                             + numbers.eight(numbs[1])[i]
                             + numbers.nine(numbs[1])[i]
                             + numbers.zero(numbs[1])[i]);
                 if (numbs[0] == 8)
                     System.out.println(numbers.eight(numbs[0])[i]
-                            + numbers.two(numbs[1])[i]
-                            + numbers.three(numbs[1])[i]
-                            + numbers.four(numbs[1])[i]
-                            + numbers.five(numbs[1])[i]
-                            + numbers.six(numbs[1])[i]
-                            + numbers.seven(numbs[1])[i]
                             + numbers.one(numbs[1])[i]
-                            + numbers.nine(numbs[1])[i]
-                            + numbers.zero(numbs[1])[i]);
-                if (numbs[0] == 9)
-                    System.out.println(numbers.nine(numbs[0])[i]
                             + numbers.two(numbs[1])[i]
                             + numbers.three(numbs[1])[i]
                             + numbers.four(numbs[1])[i]
@@ -128,7 +125,19 @@ public class Order {
                             + numbers.six(numbs[1])[i]
                             + numbers.seven(numbs[1])[i]
                             + numbers.eight(numbs[1])[i]
+                            + numbers.nine(numbs[1])[i]
+                            + numbers.zero(numbs[1])[i]);
+                if (numbs[0] == 9)
+                    System.out.println(numbers.nine(numbs[0])[i]
                             + numbers.one(numbs[1])[i]
+                            + numbers.two(numbs[1])[i]
+                            + numbers.three(numbs[1])[i]
+                            + numbers.four(numbs[1])[i]
+                            + numbers.five(numbs[1])[i]
+                            + numbers.six(numbs[1])[i]
+                            + numbers.seven(numbs[1])[i]
+                            + numbers.eight(numbs[1])[i]
+                            + numbers.nine(numbs[1])[i]
                             + numbers.zero(numbs[1])[i]);
             }
         }
