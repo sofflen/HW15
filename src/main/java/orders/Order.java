@@ -9,12 +9,12 @@ public class Order {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please, enter your number: ");
         String s = sc.next();
-        char[] chars = s.toCharArray();
-        int[] numbs = new int[chars.length];
-        for (int i = 0; i < chars.length; i++) {
-            numbs[i] = Integer.parseInt(String.valueOf(chars[i]));
+        int x = Integer.parseInt(s);
+        int[] numbs = new int[s.length()];
+        for (int i = s.length() - 1; i >= 0; i--) {
+            numbs[i] = x % 10;
+            x /= 10;
         }
-//        int[] numbs = Integer.toString(x).chars().map(i -> i - '0').toArray();
         int length = numbs.length;
         int ops = 2;
         String[][] alone = new String[7][1];
