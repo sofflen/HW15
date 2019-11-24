@@ -8,8 +8,13 @@ public class Order {
         Numbers numbers = new Numbers();
         Scanner sc = new Scanner(System.in);
         System.out.println("Please, enter your number: ");
-        int x = sc.nextInt();
-        int[] numbs = Integer.toString(x).chars().map(i -> i - '0').toArray();
+        String s = sc.next();
+        char[] chars = s.toCharArray();
+        int[] numbs = new int[chars.length];
+        for (int i = 0; i < chars.length; i++) {
+            numbs[i] = Integer.parseInt(String.valueOf(chars[i]));
+        }
+//        int[] numbs = Integer.toString(x).chars().map(i -> i - '0').toArray();
         int length = numbs.length;
         int ops = 2;
         String[][] alone = new String[7][1];
