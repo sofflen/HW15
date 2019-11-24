@@ -1,9 +1,8 @@
-import java.util.Arrays;
+import orders.Order;
 
 public class Main {
     public static void main(String[] args) {
-        Order order = new Order();
-        order.orderNumber(77);
+        new Order().orderNumber();
     }
 }
 
